@@ -1,0 +1,49 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "prod": "SET NODE_ENV=production&&nodemon server.js",
+    "watchjs": "parcel watch ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
+    "buildjs": "parcel build ./public/js/index.js --out-dir ./public/js --out-file bundle.js",
+    "async": "nodemon _learn/async",
+    "format": "nodemon _learn/formatNum"
+  },
+  "author": "samuel",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "chalk": "^4.1.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.15",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.5.0",
+    "pug": "^3.0.2",
+    "slugify": "^1.5.0",
+    "validator": "^13.5.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-node": "^4.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "parcel-bundler": "^1.12.5",
+    "prettier": "^2.3.0"
+  },
+  "engines": {
+    "node": "^14"
+  }
+}
